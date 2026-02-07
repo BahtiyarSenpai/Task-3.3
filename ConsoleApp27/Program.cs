@@ -1,9 +1,13 @@
 ﻿using System;
 
 public class BahaSenpai
-{  
-    public int TripleAttack(int damageOne, int damageTwo, int damageThree)
+{
+    public (string enchantedWeapon, int newHealth) EnchantAndAttack(int targetHealth, int damage, string weapon)
     {
-        return damageOne + damageTwo + damageThree;
+        int enchantedDamage = damage + 10;
+        int newHealth = targetHealth - enchantedDamage;
+        string enchantedWeapon = "enchanted " + weapon;
+
+        return (enchantedWeapon, newHealth);
     }
 }
