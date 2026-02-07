@@ -1,9 +1,11 @@
 ﻿using System;
 
 public class BahaSenpai
-{  
-    public int TripleAttack(int damageOne, int damageTwo, int damageThree)
+{
+    public (double lesserCursed, double greaterCursed) Curse(double weaponDamage)
     {
-        return damageOne + damageTwo + damageThree;
+        double lesserCursed = weaponDamage * 0.5;
+        double greaterCursed = weaponDamage * 0.25;
+        return (lesserCursed, greaterCursed);
     }
 }
