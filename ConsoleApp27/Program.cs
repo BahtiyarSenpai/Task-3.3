@@ -1,9 +1,10 @@
 ﻿using System;
 
 public class BahaSenpai
-{  
-    public int TripleAttack(int damageOne, int damageTwo, int damageThree)
+{
+    public string GetTitle(string firstName, string lastName, string job)
     {
-        return damageOne + damageTwo + damageThree;
+        string title = firstName + " " + lastName + " the " + job;
+        return title;
     }
 }
