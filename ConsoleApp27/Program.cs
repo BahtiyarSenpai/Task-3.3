@@ -2,8 +2,13 @@
 
 public class BahaSenpai
 {
-    public int HoursToSeconds(int hours)
+    public (string title, int newPower) BecomeWarrior(string fullName, int power)
     {
-        return hours * 3600;
+        string title = $"{fullName} the warrior";
+        int newPower = power;
+        return (title, newPower);
     }
+
+    // Вызов:
+    // var (title, power) = BecomeWarrior("Frodo", 5);
 }
