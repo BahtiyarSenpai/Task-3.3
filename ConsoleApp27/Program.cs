@@ -1,9 +1,13 @@
 ﻿using System;
 
 public class BahaSenpai
-{  
-    public int TripleAttack(int damageOne, int damageTwo, int damageThree)
+{
+    
+   public void Main()
     {
-        return damageOne + damageTwo + damageThree;
+        Console.WriteLine("Fantasy Quest загружается...");
+        Console.WriteLine("Игра запущена!");
     }
+
+   // Main(); 
 }
