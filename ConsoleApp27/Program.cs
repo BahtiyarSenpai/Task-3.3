@@ -1,9 +1,9 @@
 ﻿using System;
 
 public class BahaSenpai
-{  
-    public int TripleAttack(int damageOne, int damageTwo, int damageThree)
+{
+    public int HoursToSeconds(int hours)
     {
-        return damageOne + damageTwo + damageThree;
+        return hours * 3600;
     }
 }
