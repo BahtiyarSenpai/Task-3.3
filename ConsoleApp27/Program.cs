@@ -1,9 +1,14 @@
 ﻿using System;
 
 public class BahaSenpai
-{  
-    public int TripleAttack(int damageOne, int damageTwo, int damageThree)
+{
+    public (string title, int newPower) BecomeWarrior(string fullName, int power)
     {
-        return damageOne + damageTwo + damageThree;
+        string title = $"{fullName} the warrior";
+        int newPower = power;
+        return (title, newPower);
     }
+
+    // Вызов:ll
+    // var (title, power) = BecomeWarrior("Frodo", 5);
 }
